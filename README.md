@@ -1270,7 +1270,7 @@ Multiple dimensions, the grid is something you should think about.
     transform-origin: center;
   }
 ```
-
+transform-origin 中心点
 #
 
 ### 66. skew and scale
