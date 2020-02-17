@@ -990,6 +990,8 @@ line-height:32px;
 
 ### 52. text-decoration & text-shadow
 
+* text-transform: uppercase;
+
 ```css
 .package__info {
   text-decoration: none;
