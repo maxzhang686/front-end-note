@@ -1366,11 +1366,43 @@ https://easings.net/en
 #
 ### 74. animations
 
-`@keyframs`
+```css
+<div id="banner-message"></div>
+
+#banner-message {
+  background: #fff;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 0 auto;
+  width: 20px;
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-end;
+}
+
+@keyframes example {
+  0%   {background-color: green;}
+  50%  {background-color: yellow;}
+  66.7%  {background-color: red;}
+  100% {background-color: green;}
+}
+```
 
 Example:
+```CSS
+@keyframes wiggle {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(45deg);
+  }
+}
 
-`animation: wiggle 200ms 1s ease-out 8 alternate forwards running; `
+animation: wiggle 200ms 1s ease-out 8 alternate forwards running; 
+```
+`animation: NAME DURATION DELAY TIMING-FUNCTION ITERATION DIRECTION FILL-MODE PLAY-STATE;`  
 
 Can be translated to: "Play the wiggle keyframe set (animation) over a duration of **200ms**. Between two keyframes **start fast and end slow**, also make sure to wait **1s before you start**. Play **8 animations** and **alternate** after each animation. Once you're done, **keep the final value** applied to the element. Oh, and you should be **playing the animation - not pausing**."
 
