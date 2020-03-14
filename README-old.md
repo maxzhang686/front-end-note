@@ -2,120 +2,29 @@
 
 Front-end note by Max
 
-- [1. _Section 1 Basice of Css_](#1-_section-1-basice-of-css_)
-  - [1.1. Add CSS](#11-add-css)
-  - [1.2. Selector](#12-selector)
-  - [1.3. Inheritance/Combinators](#13-inheritancecombinators)
-    - [1.3.1. Inherit](#131-inherit)
-    - [1.3.2. Combinators](#132-combinators)
-- [2. _Section 2 Box Model_](#2-_section-2-box-model_)
-  - [2.1. Box Model](#21-box-model)
-  - [2.2. Boxing Sizing](#22-boxing-sizing)
-  - [2.3. font-weight & border](#23-font-weight--border)
-- [3. _Section 3 More on Css_](#3-_section-3-more-on-css_)
-  - [3.1. Display Property](#31-display-property)
-  - [3.2. text-decoration & vertical-align](#32-text-decoration--vertical-align)
-  - [3.3. so-called pseudo classes](#33-so-called-pseudo-classes)
-  - [3.4. Grouping Rules](#34-grouping-rules)
-  - [3.5. About button](#35-about-button)
-  - [3.6. Adding image in CSS](#36-adding-image-in-css)
-  - [3.7. ~~Properties worth to remember~~](#37-properties-worth-to-remember)
-- [4. _Section 4 More on Selectors_](#4-_section-4-more-on-selectors_)
-  - [4.1. Multiple selector](#41-multiple-selector)
-  - [4.2. Use class or ID?](#42-use-class-or-id)
-  - [4.3. pseudo-class :not()](#43-pseudo-class-not)
-- [5. _Section 5 More On Css_](#5-_section-5-more-on-css_)
-  - [5.1. Browser Support](#51-browser-support)
-  - [5.2. Box-Shadow](#52-box-shadow)
-  - [5.3. Understand Outlines](#53-understand-outlines)
-  - [5.4. So-called float](#54-so-called-float)
-- [6. _Section 6 Position_](#6-_section-6-position_)
-  - [6.1. Position](#61-position)
-  - [6.2. fixed](#62-fixed)
-  - [6.3. z-index](#63-z-index)
-  - [6.4. absolute](#64-absolute)
-  - [6.5. relative](#65-relative)
-  - [6.6. sticky](#66-sticky)
-- [7. _Section 7 Background_](#7-_section-7-background_)
-  - [7.1. background image](#71-background-image)
-  - [7.2. Size](#72-size)
-  - [7.3. Position](#73-position)
-  - [7.4. Origin/Clip/attachment](#74-originclipattachment)
-  - [7.5. Anchor tab with image](#75-anchor-tab-with-image)
-  - [7.6. linear Gradient](#76-linear-gradient)
-  - [7.7. radial Gradient](#77-radial-gradient)
-  - [7.8. Filters](#78-filters)
-  - [7.9. Adding styling 　 SVGs](#79-adding-styling-　-svgs)
-- [8. _Section 8 Sizes and Units_](#8-_section-8-sizes-and-units_)
-  - [8.1. What properties need size](#81-what-properties-need-size)
-  - [8.2. three Rules to remember with '^^'](#82-three-rules-to-remember-with-^^)
-  - [8.3. Height with 100^^ issue](#83-height-with-100^^-issue)
-  - [8.4. max-width/height and min-width/height](#84-max-widthheight-and-min-widthheight)
-  - [8.5. rem and em](#85-rem-and-em)
-  - [8.6. vw and vh](#86-vw-and-vh)
-  - [8.7. Windows, Viewport Units & Scrollbars](#87-windows-viewport-units--scrollbars)
-  - [8.8. Choosing the Right Unit](#88-choosing-the-right-unit)
-- [9. _Section 9 JS and CSS_](#9-_section-9-js-and-css_)
-  - [9.1. JS can change display value](#91-js-can-change-display-value)
-- [10. _Section 10 Responsive Design_](#10-_section-10-responsive-design_)
-  - [10.1. Hardware vs Software Pixels](#101-hardware-vs-software-pixels)
-  - [10.2. `<meta>` tag in HTML](#102-meta-tag-in-html)
-  - [10.3. Media Queries with @media](#103-media-queries-with-media)
-- [11. _Section 11 Form with Css_](#11-_section-11-form-with-css_)
-  - [11.1. Advanced Attribute Selectors](#111-advanced-attribute-selectors)
-  - [11.2. Built-in element (Checkbox)](#112-built-in-element-checkbox)
-- [12. _Section 12 More about Fonts_](#12-_section-12-more-about-fonts_)
-  - [12.1. About fonts](#121-about-fonts)
-  - [12.2. Letter-spacing & Line Heigt](#122-letter-spacing--line-heigt)
-  - [12.3. text-decoration & text-shadow](#123-text-decoration--text-shadow)
-  - [12.4. Shorthand](#124-shorthand)
-  - [12.5. font-display](#125-font-display)
-- [13. _Section 13 Flexbox_](#13-_section-13-flexbox_)
-  - [13.1. Flexbox](#131-flexbox)
-  - [13.2. Main axis vs Cross Axis](#132-main-axis-vs-cross-axis)
-  - [13.3. Some Properties](#133-some-properties)
-- [14. _Section 14 Css Grid_](#14-_section-14-css-grid_)
-  - [14.1. CSS Grid](#141-css-grid)
-  - [14.2. defining columns & rows](#142-defining-columns--rows)
-  - [14.3. posotioning child elements in Grid](#143-posotioning-child-elements-in-grid)
-  - [14.4. Gaps between column or row / template areas](#144-gaps-between-column-or-row--template-areas)
-  - [14.5. some propertis](#145-some-propertis)
-  - [14.6. 
-flow](#146-
-flow)
-  - [14.7. Dense Grid](#147-dense-grid)
-  - [14.8. Flexbox vs. CSS Grid](#148-flexbox-vs-css-grid)
-- [15. _Section 15 Css Transforms_](#15-_section-15-css-transforms_)
-  - [15.1. Rotating](#151-rotating)
-  - [15.2. skew and scale](#152-skew-and-scale)
-  - [15.3. D  dimension](#153-d--dimension)
-  - [15.4. perspective](#154-perspective)
-  - [15.5. translate](#155-translate)
-  - [15.6. transform-style](#156-transform-style)
-  - [15.7. backface-visibility](#157-backface-visibility)
-- [16. _Section 16 Transitions and Animations_](#16-_section-16-transitions-and-animations_)
-  - [16.1. transitions](#161-transitions)
-  - [16.2. Timing Functions](#162-timing-functions)
-  - [16.3. animations](#163-animations)
-  - [16.4. multiple Keyframes](#164-multiple-keyframes)
-- [17. _Section 17 Future-proof Css_](#17-_section-17-future-proof-css_)
-  - [17.1. CSS Variables](#171-css-variables)
-  - [17.2. Vendor Prefixes](#172-vendor-prefixes)
-  - [17.3. Name css class](#173-name-css-class)
-  - [17.4. Vanilla CSS vs Frameworks](#174-vanilla-css-vs-frameworks)
-- [18. _Section 18 Sass_](#18-_section-18-sass_)
-  - [18.1. Scss and Sass](#181-scss-and-sass)
-  - [18.2. Nesting](#182-nesting)
-  - [18.3. Variables](#183-variables)
-  - [18.4. Built-In Functions](#184-built-in-functions)
-  - [18.5. Inheritance](#185-inheritance)
-  - [18.6. Mixins](#186-mixins)
-  - [18.7. Ampersand Operator](#187-ampersand-operator)
-  - [18.8. Useful Resources](#188-useful-resources)
+- [CSS](#CSS)
+  - [1 Basice of Css](#Section-1-Basice-of-Css)
+  - [2 Box Model](#Section-2-Box-Model)
+  - [3 More on Css](#Section-3-More-On-Css)
+  - [4 More on Selectors](#Section-4-More-on-Selectors)
+  - [5 More on Css 2](#Section-5-More-on-Css)
+  - [6 Position](#Section-6-Position)
+  - [7 Background](#Section-7-Background)
+  - [8 Sizes and Units](#Section-8-Sizes-and-Units)
+  - [9 JS and CSS](#Section-9-JS-and-CSS)
+  - [10 Responsive Design](#Section-10-Responsive-Design)
+  - [11 Form with CSS](#Section-11-Form-with-Css)
+  - [12 More about Fonts](#Section-12-More-about-Fonts)
+  - [13 Flexbox](#Section-13-Flexbox)
+  - [14 Css Grid](#Section-14-Css-Grid)
+  - [15 Css Transforms](#Section-15-Css-Transforms)
+  - [16 Transitions and Animations](#Section-16-Transitions-and-Animations)
+  - [17 Future-proof Css](#Section-17-Future-proof-Css)
+  - [18 Sass](#Section-18-Sass)
+- [JavaScript](#JavaScript)
+- [React](#React)
 
-
-
-# CSS
+## CSS
 
 Using [BEM](#78-Name-css-class).  
 Designing Websites "Mobile First".
@@ -125,9 +34,9 @@ Different PC system, browser, browser font size.
 Default height, weight, marging, padding.(in `<html>, <body>`)
 
 ---
-## 1. _Section 1 Basice of Css_
+## _Section 1 Basice of Css_
 
-### 1.1. Add CSS
+### 1. Add CSS
 
 **Inline**
 ```CSS
@@ -158,7 +67,7 @@ Defined within the `<link>`, in `<head>` section.
 
 #
 
-### 1.2. Selector
+### 2. Selector
 
 **Elements**
 
@@ -214,9 +123,9 @@ p.center {
 
 #
 
-### 1.3. Inheritance/Combinators
+### 3. Inheritance/Combinators
 
-#### 1.3.1. Inherit
+#### Inherit
 
 ```CSS
 .class-name {
@@ -224,7 +133,7 @@ p.center {
 }
 ```
 
-#### 1.3.2. Combinators
+#### Combinators
 
 example
 
@@ -278,9 +187,9 @@ div p {
 #
 
 ---
-## 2. _Section 2 Box Model_
+## _Section 2 Box Model_
 
-### 2.1. Box Model
+### 4. Box Model
 
 ![find](css-images/boxmodel.png)
 
@@ -310,7 +219,7 @@ width: calc(100% - 50px);
 \*_carefull the whitespace you have in the editor here._
 
 #
-### 2.2. Boxing Sizing 
+### 5. Boxing Sizing 
 When we set the width and height of the content. the size in the html page will plus the padding, the border or of the content.  
 We can use `box-sizing: border-box;` to set the total size.
 
@@ -321,7 +230,7 @@ _for inline element, margin/padding/border top and bottom don't have an effect_
 
 #
 
-### 2.3. font-weight & border
+### 6. font-weight & border
 
 Need understand `border-image`.
 
@@ -329,9 +238,9 @@ Need understand `border-image`.
 #
 
 ---
-## 3. _Section 3 More on Css_
+## _Section 3 More on Css_
 
-### 3.1. Display Property
+### 7. Display Property
 
 `display: none`  
 `display: block`;  
@@ -343,7 +252,7 @@ If you only want to hide an element but you want to keep its place (i.e. other e
 
 #
 
-### 3.2. text-decoration & vertical-align
+### 8. text-decoration & vertical-align
 
 text-decoration: text style
 
@@ -353,7 +262,7 @@ Check more info from MDN
 
 #
 
-### 3.3. so-called pseudo classes
+### 9. so-called pseudo classes
 
 [Pseudo Classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) & [Pseudo Elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
 
@@ -364,7 +273,7 @@ Check more info from MDN
 
 #
 
-### 3.4. Grouping Rules
+### 10. Grouping Rules
 
 ```CSS
 .main-nav-item a:hover{
@@ -384,7 +293,7 @@ Check more info from MDN
 
 #
 
-### 3.5. About button
+### 11. About button
 
 _border-radius_
 
@@ -408,7 +317,7 @@ _cursor_
 
 #
 
-### 3.6. Adding image in CSS
+### 12. Adding image in CSS
 
 \*other section will explain more  
 [Section 7 Background](#Section-7-Background)
@@ -423,17 +332,17 @@ _cursor_
 
 #
 
-### 3.7. ~~Properties worth to remember~~
+### 13. ~~Properties worth to remember~~
 
 #
 
 ---
 
-## 4. _Section 4 More on Selectors_
+## _Section 4 More on Selectors_
 
 #
 
-### 4.1. Multiple selector
+### 14. Multiple selector
 
 Understand Different between `a.cative` and `a .active`
 
@@ -443,7 +352,7 @@ Understand Different between `a.cative` and `a .active`
 
 #
 
-### 4.2. Use class or ID?
+### 15. Use class or ID?
 
 ![find](css-images/classorid.png)
 
@@ -451,7 +360,7 @@ Id also allows you link on a page
 
 #
 
-### 4.3. pseudo-class :not()
+### 16. pseudo-class :not()
 ```css
 /* Selects any element that is NOT a paragraph */
 :not(p) {
@@ -462,22 +371,22 @@ Id also allows you link on a page
 #
 --- 
 
-## 5. _Section 5 More On Css_
+## _Section 5 More On Css_
 
-### 5.1. Browser Support
+### 17. Browser Support
 
 [Can I use](https://caniuse.com/)
 
 #
 
-### 5.2. Box-Shadow
+### 18. Box-Shadow
 
 
 [Box-Shadow-cn](https://www.jianshu.com/p/2bd56a32de59)
 
 #
 
-### 5.3. Understand Outlines
+### 19. Understand Outlines
 Browser have the default color.
 ```CSS
 .plan-button:focus{
@@ -487,7 +396,7 @@ Browser have the default color.
 
 #
 
-### 5.4. So-called float
+### 20. So-called float
 
 ```CSS
 #free {
@@ -509,11 +418,11 @@ This is a hacky way, use different things like flex box.
 
 ---
 
-## 6. _Section 6 Position_
+## _Section 6 Position_
 
 ![find](css-images/section6.png)
 
-### 6.1. Position
+### 21. Position
 
 Position:
 
@@ -525,7 +434,7 @@ Position:
 
 #
 
-### 6.2. fixed
+### 22. fixed
 
 fixed changed the positioning context to viewport.
 
@@ -540,7 +449,7 @@ fixed changed the positioning context to viewport.
 
 #
 
-### 6.3. z-index
+### 23. z-index
 
 ```CSS
 .background {
@@ -557,7 +466,7 @@ fixed changed the positioning context to viewport.
 
 #
 
-### 6.4. absolute
+### 24. absolute
 
 fixed changed the positioning context to viewport.
 
@@ -565,7 +474,7 @@ absolute also take out of the document flow, but is base on the HTML element(top
 
 #
 
-### 6.5. relative
+### 25. relative
 
 parent element basically.
 
@@ -573,7 +482,7 @@ parent element basically.
 
 #
 
-### 6.6. sticky
+### 26. sticky
 
 understand how it works first.
 
@@ -584,7 +493,7 @@ Sticky not support all brower. check [CanIuse](https://caniuse.com/) before you 
 
 ---
 
-## 7. _Section 7 Background_
+## _Section 7 Background_
 
 - Understand "background" Property
 - image
@@ -593,7 +502,7 @@ Sticky not support all brower. check [CanIuse](https://caniuse.com/) before you 
 
 #
 
-### 7.1. background image
+### 27. background image
 
 ```CSS
 .background {
@@ -607,7 +516,7 @@ Sticky not support all brower. check [CanIuse](https://caniuse.com/) before you 
 
 #
 
-### 7.2. Size
+### 28. Size
 
 basic declaration
 
@@ -641,7 +550,7 @@ special declaration
 
 #
 
-### 7.3. Position
+### 29. Position
 
 basic declaration  
 `background-position: x-axis y-axis;`
@@ -662,7 +571,7 @@ basic declaration
 
 #
 
-### 7.4. Origin/Clip/attachment
+### 30. Origin/Clip/attachment
 
 basic declaration
 
@@ -703,7 +612,7 @@ shorthand
 
 #
 
-### 7.5. Anchor tab with image
+### 31. Anchor tab with image
 
 This is important to understand, with using images it depends on whether you use it nested in an inline element, in which case 100% will simply use the default dimension, the default or height of the image  
 Or if you use it inside a block level element where it will use the container width or height.
@@ -725,7 +634,7 @@ Try using `background-image`, the better way!!
 
 #
 
-### 7.6. linear Gradient
+### 32. linear Gradient
 also can use cubic-bezier, like `cubic-bezier(0.25, 0.46, 0.45, 0.94)`
 
 Example:
@@ -745,7 +654,7 @@ Example:
 
 #
 
-### 7.7. radial Gradient
+### 33. radial Gradient
 
 Example:
 
@@ -767,13 +676,13 @@ Please check [MDN](https://developer.mozilla.org/en-US/) for more property and p
 
 #
 
-### 7.8. Filters
+### 34. Filters
 
 Please check [MDN-Filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) for more property and property value.
 
 #
 
-### 7.9. Adding styling 　 SVGs
+### 35. Adding styling 　 SVGs
 
 **clip-path**
 ```css
@@ -798,14 +707,14 @@ Please check [MDN-SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial
 
 ---
 
-## 8. _Section 8 Sizes and Units_
+## _Section 8 Sizes and Units_
 
 ![find](css-images/section8a.png)
 ![find](css-images/section8b.png)
 
 #
 
-### 8.1. What properties need size
+### 36. What properties need size
 
 ![find](css-images/section8c.png)
 
@@ -813,7 +722,7 @@ Please check [MDN-SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial
 
 #
 
-### 8.2. three Rules to remember with '^^'
+### 37. 3 Rules to remember with '%'
 
 Fixed positioning  
 The containing block is the viewport.
@@ -826,25 +735,25 @@ Ancestor(content)
 
 #
 
-### 8.3. Height with 100^^ issue
+### 38. Height with 100% issue
 
 If not working check the default height in `<html> and <body>`
 
 #
 
-### 8.4. max-width/height and min-width/height
+### 39. max-width/height and min-width/height
 
 \*other section will explain more, in [response design section](#Section-10-Responsive-Design)
 
 #
 
-### 8.5. rem and em
+### 40. rem and em
 
 1em = 16px
 
 #
 
-### 8.6. vw and vh
+### 41. vw and vh
 
 vw, viewport-width  
 vmin and vmax, display changing depend on the viewport width is smaller than the height or not.
@@ -853,7 +762,7 @@ viewport-height
 
 #
 
-### 8.7. Windows, Viewport Units & Scrollbars
+### 42. Windows, Viewport Units & Scrollbars
 
 Hiding Scrollbars on Windows machines  
 After adding `vw` , you probably saw that the scrollbars appeared in case you are working on Windows. This happens as using `vw` on Windows does not include the scrollbars - `vw: 100` is equal to 100% of the viewport width + the scrollbars. On the Mac this is not an issue, but when using Windows it is as the scrollbars are displayed by default.
@@ -878,7 +787,7 @@ Make sure to follow these approaches in case you don't want to display the scrol
 
 #
 
-### 8.8. Choosing the Right Unit
+### 43. Choosing the Right Unit
 
 Not a definite guidance!
 ![find](css-images/section8e.png)
@@ -893,11 +802,11 @@ And `margin: auto` to center elements
 
 ---
 
-## 9. _Section 9 JS and CSS_
+## _Section 9 JS and CSS_
 
 #
 
-### 9.1. JS can change display value
+### 44. JS can change display value
 
 Will explain more on Js Part.
 
@@ -918,7 +827,7 @@ name.addEventListener("click", function() {
 
 ---
 
-## 10. _Section 10 Responsive Design_
+## _Section 10 Responsive Design_
 
 - Hardware vs Software Pixels
 - `<meta>` tag in HTML
@@ -926,20 +835,20 @@ name.addEventListener("click", function() {
 
 #
 
-### 10.1. Hardware vs Software Pixels
+### 45. Hardware vs Software Pixels
 
 [Absolute lengths](https://www.w3.org/TR/css-values-3/#absolute-lengths)  
 [Compare Devices](https://www.mydevice.io/#compare-devices)
 
 #
 
-### 10.2. `<meta>` tag in HTML
+### 46. `<meta>` tag in HTML
 
 ![find](css-images/section10.png)
 
 #
 
-### 10.3. Media Queries with @media
+### 47. Media Queries with @media
 
 [Media queries theory](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
 
@@ -957,14 +866,14 @@ name.addEventListener("click", function() {
 
 ---
 
-## 11. _Section 11 Form with Css_
+## _Section 11 Form with Css_
 
 - Advanced Attribute Selectors
 - Built-in element (Checkbox)
 
 #
 
-### 11.1. Advanced Attribute Selectors
+### 48. Advanced Attribute Selectors
 
 ![find](css-images/section11a.png)
 
@@ -988,7 +897,7 @@ Example:
 
 #
 
-### 11.2. Built-in element (Checkbox)
+### 49. Built-in element (Checkbox)
 
 Example:
 
@@ -1028,7 +937,7 @@ Example:
 
 ---
 
-## 12. _Section 12 More about Fonts_
+## _Section 12 More about Fonts_
 
 - Generic & Font Families
 - Browser Setting
@@ -1036,7 +945,7 @@ Example:
 
 #
 
-### 12.1. About fonts
+### 50. About fonts
 
 [check font stacks](https://www.cssfontstack.com/)
 
@@ -1057,7 +966,7 @@ Example:
 
 #
 
-### 12.2. Letter-spacing & Line Heigt
+### 51. Letter-spacing & Line Heigt
 
 **Letter-spacing**
 ```css
@@ -1079,7 +988,7 @@ line-height:32px;
 
 #
 
-### 12.3. text-decoration & text-shadow
+### 52. text-decoration & text-shadow
 
 * text-transform: uppercase;
 
@@ -1096,7 +1005,7 @@ line-height:32px;
 
 #
 
-### 12.4. Shorthand
+### 53. Shorthand
 ```css
 .package__info {
   font: italic small-caps 700 1.2rem/2 "Anton", sans-serif;
@@ -1117,7 +1026,7 @@ line-height:32px;
 ```
 #
 
-### 12.5. font-display
+### 54. font-display
 
 ![find](css-images/section12a.png)
 
@@ -1129,14 +1038,14 @@ line-height:32px;
 
 ---
 
-## 13. _Section 13 Flexbox_
+## _Section 13 Flexbox_
 - The Flex-Container
 - Main axis vs Cross Axis
 - The Flex Items
 
 #
 
-### 13.1. Flexbox
+### 55. Flexbox
 
 ![find](css-images/section13a.png)
 
@@ -1148,13 +1057,13 @@ line-height:32px;
 
 #
 
-### 13.2. Main axis vs Cross Axis
+### 56. Main axis vs Cross Axis
 
 ![find](css-images/section13b.png)
 
 #
 
-### 13.3. Some Properties 
+### 57. Some Properties 
 
 **For the Parent**
 
@@ -1184,13 +1093,13 @@ line-height:32px;
 
 ---
 
-## 14. _Section 14 Css Grid_
+## _Section 14 Css Grid_
 - CSS Grid
 - Flexbox vs. CSS Grid
 
 #
 
-### 14.1. CSS Grid
+### 58.  CSS Grid
 
 ![find](css-images/section14a.png)
 
@@ -1202,7 +1111,7 @@ line-height:32px;
 
 #
 
-### 14.2. defining columns & rows
+### 59. defining columns & rows
 ```css
 .container {
   margin: 20px;
@@ -1223,7 +1132,7 @@ line-height:32px;
 
 #
 
-### 14.3. posotioning child elements in Grid
+### 60. posotioning child elements in Grid
 ```css
 .el2 {
   background: rgba(255, 0, 0, 0.5);
@@ -1245,7 +1154,7 @@ line-height:32px;
 
 #
 
-### 14.4. Gaps between column or row / template areas
+### 61. Gaps between column or row / template areas
 ```css
 .container {
   /*
@@ -1273,7 +1182,7 @@ line-height:32px;
 
 #
 
-### 14.5. some propertis
+### 62. some propertis
 
 fit-content (set unit size)
 
@@ -1288,7 +1197,7 @@ justify-self / align-self (Positioning Elements Individually)
 
 #
 
-### 14.6. Autoflow
+### 63. Autoflow
 
 Can set up the first row, and make the folow rows as autoflow. (same as columns)
 ```css
@@ -1323,14 +1232,14 @@ Can set up the first row, and make the folow rows as autoflow. (same as columns)
 
 #
 
-### 14.7. Dense Grid
+### 64. Dense Grid
 
 Auto fill white space,
 Not recommended!
 
 
 #
-### 14.8. Flexbox vs. CSS Grid
+### 65. Flexbox vs. CSS Grid
 
 
 One dimension， normally, you should take flexbox.  
@@ -1342,13 +1251,13 @@ Multiple dimensions, the grid is something you should think about.
 
 ---
 
-## 15. _Section 15 Css Transforms_
+## _Section 15 Css Transforms_
 - Rotating, Moving, Skewing & Scaling Elements
 - 3D Transformations
 - Transforming Elements with CSS Transforms
 
 #
-### 15.1. Rotating
+### 65. Rotating
 整体倾斜角度
 
 ```css
@@ -1366,7 +1275,7 @@ Multiple dimensions, the grid is something you should think about.
 transform-origin 中心点
 #
 
-### 15.2. skew and scale
+### 66. skew and scale
 边框倾斜角度 和 放大
 
 ```css
@@ -1388,11 +1297,11 @@ transform-origin 中心点
 
 #
 
-### 15.3. D  dimension
+### 67. 3D  dimension
 
 #
 
-### 15.4. perspective
+### 68. perspective
 
 距离
 
@@ -1401,18 +1310,18 @@ perspective-origin
 
 #
 
-### 15.5. translate
+### 69. translate
 
 移动
 
 #
 
-### 15.6. transform-style
+### 70. transform-style
 
 
 
 #
-### 15.7. backface-visibility
+### 71. backface-visibility
 
 背后显示
 
@@ -1420,12 +1329,12 @@ perspective-origin
 
 ---
 
-## 16. _Section 16 Transitions and Animations_
+## _Section 16 Transitions and Animations_
 - transitions
 - animations
 
 #
-### 16.1. transitions
+### 72.  transitions
 样式改变过渡属性
 
 Example:
@@ -1450,12 +1359,12 @@ You can read the official MDN article on CSS transitions here: https://developer
 
 #
 
-### 16.2. Timing Functions
+### 73. Timing Functions
 
 https://easings.net/en
 
 #
-### 16.3. animations
+### 74. animations
 
 ```css
 <div id="banner-message"></div>
@@ -1522,7 +1431,7 @@ You can read the official MDN article on CSS animations here: https://developer.
 
 
 #
-### 16.4. multiple Keyframes
+### 75. multiple Keyframes
 ```css
 @keyframes mymove {
   0%   {top: 0px;}
@@ -1539,10 +1448,10 @@ You can read the official MDN article on CSS animations here: https://developer.
 
 ---
 
-## 17. _Section 17 Future-proof Css_
+## _Section 17 Future-proof Css_
 
 #
-### 17.1. CSS Variables
+### 76. CSS Variables
 
 
 ![find](css-images/section17a.png)
@@ -1551,7 +1460,7 @@ You can read the official MDN article on CSS animations here: https://developer.
 use sass！
 
 #
-### 17.2. Vendor Prefixes
+### 77. Vendor Prefixes
 [Vendor Prefixes](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix)
 
 [Which Vendor Prefixes should you use?](http://shouldiprefix.com/)
@@ -1565,7 +1474,7 @@ use sass！
 Eliminating cross-Browser
 
 #
-### 17.3. Name css class
+### 78. Name css class
 
 ![find](css-images/section17b.png)
 
@@ -1574,7 +1483,7 @@ Eliminating cross-Browser
 ![find](css-images/section17c.png)
 
 #
-### 17.4. Vanilla CSS vs Frameworks
+### 79. Vanilla CSS vs Frameworks
 
 ![find](css-images/section17d.png)
 
@@ -1583,7 +1492,7 @@ Eliminating cross-Browser
 
 ---
 
-## 18. _Section 18 Sass_
+## _Section 18 Sass_
 
 Need to install it first.  
 windows may need to install ruby.  
@@ -1595,7 +1504,7 @@ After you finish your code. you need to turn Sass to Css.
 watch the different when coding:  
 `sass --watch main.scss:main.css`
 #
-### 18.1. Scss and Sass
+### 80. Scss and Sass
 
 SASS works without semi-colons and without braces, instead indentation is used to determine to which selector a certain property belongs.
 
@@ -1604,7 +1513,7 @@ Scss like css.
 
 
 #
-### 18.2. Nesting 
+### 81. Nesting 
 **Nesting Selector:**  
 Css 
 ```CSS
@@ -1665,7 +1574,7 @@ Scss
 ```
 
 #
-### 18.3. Variables
+### 82. Variables
 list & map in Variables
 ```scss
 $mian-color: #521751;
@@ -1696,7 +1605,7 @@ $border-default: 0.05rem solid map-get($colors, main);
 ```
 
 #
-### 18.4. Built-In Functions
+### 83. Built-In Functions
 
 https://sass-lang.com/documentation/modules
 
@@ -1718,7 +1627,7 @@ unit and size can use `*`, `/` as well
 
 
 #
-### 18.5. Inheritance
+### 84. Inheritance
 
 ```scss
 .sass-section {
@@ -1744,14 +1653,14 @@ unit and size can use `*`, `/` as well
 }
 ```
 #
-### 18.6. Mixins
+### 85. Mixins
 Very useful and important. Must to read!
 
 https://sass-lang.com/documentation/at-rules/mixin
 
 
 #
-### 18.7. Ampersand Operator
+### 86. Ampersand Operator
 ```scss
 .documentation-link {
   text-decoration: none;
@@ -1770,7 +1679,7 @@ https://sass-lang.com/documentation/at-rules/mixin
 ```
 
 #
-### 18.8. Useful Resources
+### 87. Useful Resources
 Adding Simple Arithmetics (数据可加减乘除) 
 Adding Better Import and Partials (合并引用)
 Improving Media Queries  
@@ -1808,4 +1717,32 @@ text-decoration: none;
 
 ---
 
+## JavaScript
 
+
+## _Section 1_
+- 
+- 
+
+#
+### 1. 
+
+#
+### 2. 
+
+
+#
+---
+## _Section 2_
+
+
+#
+### 11. 
+
+#
+### 12. 
+
+
+
+
+## React
