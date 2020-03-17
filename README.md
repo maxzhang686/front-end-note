@@ -325,6 +325,12 @@ _for inline element, margin/padding/border top and bottom don't have an effect_
 
 Need understand `border-image`.
 
+```html
+<fieldset>
+  <legend>
+  </legend>
+</fieldset>
+```
 
 #
 
@@ -357,6 +363,7 @@ Check more info from MDN
 
 [Pseudo Classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) & [Pseudo Elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
 
+like: `before`,`after`
 
 (.classname:nth-of-type(2) {
   xxx:xxx
