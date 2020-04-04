@@ -775,7 +775,16 @@ Please check [MDN](https://developer.mozilla.org/en-US/) for more property and p
 #
 
 ### 7.8. Filters
-
+example: make website to gray.
+```css
+body{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+```
 Please check [MDN-Filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) for more property and property value.
 
 #
