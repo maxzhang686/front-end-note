@@ -45,7 +45,7 @@ Front-end note by Max
   - [7.6. linear Gradient](#76-linear-gradient)
   - [7.7. radial Gradient](#77-radial-gradient)
   - [7.8. Filters](#78-filters)
-  - [7.9. Adding styling 　 SVGs](#79-adding-styling-　-svgs)
+  - [7.9. Adding styling SVG](#79-adding-styling-svg)
 - [8. _Section 8 Sizes and Units_](#8-section-8-sizes-and-units)
   - [8.1. What properties need size](#81-what-properties-need-size)
   - [8.2. three Rules to remember with '^^'](#82-three-rules-to-remember-with-^^)
@@ -117,7 +117,7 @@ flow)
 
 # CSS
 
-Using [BEM](#78-Name-css-class).  
+Using [BEM](#173-name-css-class).  
 Designing Websites "Mobile First".
 
 Testing:  
@@ -789,7 +789,7 @@ Please check [MDN-Filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filte
 
 #
 
-### 7.9. Adding styling 　 SVGs
+### 7.9. Adding styling SVG
 
 **clip-path**
 ```css
