@@ -368,6 +368,7 @@ like: `before`,`after`
 (.classname:nth-of-type(2) {
   xxx:xxx
 } )
+![find](/css-images/section3a.png)
 
 #
 
@@ -465,6 +466,7 @@ Id also allows you link on a page
   color: blue;
 }
 ```
+[3.3. so-called pseudo classes](#33-so-called-pseudo-classes)
 
 #
 --- 
@@ -1097,6 +1099,7 @@ line-height:32px;
 
 ### 12.3. text-decoration & text-shadow
 
+[text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
 * text-transform: uppercase;
 
 ```css
