@@ -1,0 +1,10 @@
+
+
+```css
+img {
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+}
+
+```
