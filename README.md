@@ -61,7 +61,7 @@ Front-end note by Max
   - [10.1. Hardware vs Software Pixels](#101-hardware-vs-software-pixels)
   - [10.2. `<meta>` tag in HTML](#102-meta-tag-in-html)
   - [10.3. Media Queries with @media](#103-media-queries-with-media)
-- [11. _Section 11 Form with Css_](#11-section-11-form-with-css)
+- [11. _Section 11 Advanced Attribute Selectors_](#11-section-11-Advanced-Attribute-Selectors)
   - [11.1. Advanced Attribute Selectors](#111-advanced-attribute-selectors)
   - [11.2. Built-in element (Checkbox)](#112-built-in-element-checkbox)
 - [12. _Section 12 More about Fonts_](#12-section-12-more-about-fonts)
@@ -975,7 +975,7 @@ name.addEventListener("click", function() {
 
 ---
 
-## 11. _Section 11 Form with Css_
+## 11. _Section 11 Advanced Attribute Selectors_
 
 - Advanced Attribute Selectors
 - Built-in element (Checkbox)
