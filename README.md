@@ -80,15 +80,13 @@ Front-end note by Max
   - [14.3. posotioning child elements in Grid](#143-posotioning-child-elements-in-grid)
   - [14.4. Gaps between column or row / template areas](#144-gaps-between-column-or-row--template-areas)
   - [14.5. some propertis](#145-some-propertis)
-  - [14.6. 
-flow](#146-
-flow)
+  - [14.6. autoflow](#146-autoflow)
   - [14.7. Dense Grid](#147-dense-grid)
   - [14.8. Flexbox vs. CSS Grid](#148-flexbox-vs-css-grid)
 - [15. _Section 15 Css Transforms_](#15-section-15-css-transforms)
   - [15.1. Rotating](#151-rotating)
   - [15.2. skew and scale](#152-skew-and-scale)
-  - [15.3. D  dimension](#153-d--dimension)
+  - [15.3. dimension](#153-dimension)
   - [15.4. perspective](#154-perspective)
   - [15.5. translate](#155-translate)
   - [15.6. transform-style](#156-transform-style)
@@ -113,8 +111,6 @@ flow)
   - [18.7. Ampersand Operator](#187-ampersand-operator)
   - [18.8. Useful Resources](#188-useful-resources)
 
-
-
 # CSS
 
 Using [BEM](#173-name-css-class).  
@@ -125,11 +121,13 @@ Different PC system, browser, browser font size.
 Default height, weight, marging, padding.(in `<html>, <body>`)
 
 ---
+
 ## 1. _Section 1 Basice of Css_
 
 ### 1.1. Add CSS
 
 **Inline**
+
 ```CSS
 <h1 style="color:blue">
   Hello World!
@@ -278,6 +276,7 @@ div p {
 #
 
 ---
+
 ## 2. _Section 2 Box Model_
 
 ### 2.1. Box Model
@@ -294,6 +293,7 @@ Understand [Margin Collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/
 **content**
 
 #
+
 **Separate & Shorthand Properties**
 
 ![find](css-images/shorthand.png)
@@ -310,14 +310,15 @@ width: calc(100% - 50px);
 \*_carefull the whitespace you have in the editor here._
 
 #
-### 2.2. Boxing Sizing 
+
+### 2.2. Boxing Sizing
+
 When we set the width and height of the content. the size in the html page will plus the padding, the border or of the content.  
 We can use `box-sizing: border-box;` to set the total size.
 
 _margin is never included_
 
 _for inline element, margin/padding/border top and bottom don't have an effect_
-
 
 #
 
@@ -327,14 +328,14 @@ Need understand `border-image`.
 
 ```html
 <fieldset>
-  <legend>
-  </legend>
+  <legend></legend>
 </fieldset>
 ```
 
 #
 
 ---
+
 ## 3. _Section 3 More on Css_
 
 ### 3.1. Display Property
@@ -366,7 +367,7 @@ Check more info from MDN
 like: `before`,`after`
 
 (.classname:nth-of-type(2) {
-  xxx:xxx
+xxx:xxx
 } )
 ![find](/css-images/section3a.png)
 
@@ -396,22 +397,22 @@ like: `before`,`after`
 
 _border-radius_
 
-
-
 ```CSS
 .main-nav-item-cta a{
   border-radius: 8px;
 }
 ```
+
 [border-radius_MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
 
-_cursor_  
+_cursor_
 
 ```CSS
 .button{
   cursor: pointer;
 }
 ```
+
 [cursor_W3C](https://www.w3schools.com/cssref/pr_class_cursor.asp)
 
 #
@@ -460,16 +461,19 @@ Id also allows you link on a page
 #
 
 ### 4.3. pseudo-class :not()
+
 ```css
 /* Selects any element that is NOT a paragraph */
 :not(p) {
   color: blue;
 }
 ```
+
 [3.3. so-called pseudo classes](#33-so-called-pseudo-classes)
 
 #
---- 
+
+---
 
 ## 5. _Section 5 More On Css_
 
@@ -481,13 +485,14 @@ Id also allows you link on a page
 
 ### 5.2. Box-Shadow
 
-
 [Box-Shadow-cn](https://www.jianshu.com/p/2bd56a32de59)
 
 #
 
 ### 5.3. Understand Outlines
+
 Browser have the default color.
+
 ```CSS
 .plan-button:focus{
   outline: none;
@@ -735,6 +740,7 @@ Try using `background-image`, the better way!!
 #
 
 ### 7.6. linear Gradient
+
 also can use cubic-bezier, like `cubic-bezier(0.25, 0.46, 0.45, 0.94)`
 
 Example:
@@ -777,16 +783,19 @@ Please check [MDN](https://developer.mozilla.org/en-US/) for more property and p
 #
 
 ### 7.8. Filters
+
 example: make website to gray.
+
 ```css
-body{
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
+body {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
 }
 ```
+
 Please check [MDN-Filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) for more property and property value.
 
 #
@@ -794,16 +803,17 @@ Please check [MDN-Filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filte
 ### 7.9. Adding styling SVG
 
 **clip-path**
+
 ```css
-.clip{
-  background-color:red;
-  height:300px;
-  width:500px;
+.clip {
+  background-color: red;
+  height: 300px;
+  width: 500px;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 ```
-Please check [clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path) for more property and property value.  
 
+Please check [clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path) for more property and property value.
 
 **SVGs**  
 Please check [MDN-SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS) for more property and property value.
@@ -926,7 +936,7 @@ var classname = document.querySelector(".classname");
 var classnames = document.querySelectorAll(".classname");
 var idname = document.getElementById("idname");
 
-name.addEventListener("click", function() {
+name.addEventListener("click", function () {
   classname.className = "calssname";
   classname.classList.add("newclassname");
 });
@@ -1078,6 +1088,7 @@ Example:
 ### 12.2. Letter-spacing & Line Heigt
 
 **Letter-spacing**
+
 ```css
 .package__info {
   letter-spacing: 10px;
@@ -1088,10 +1099,11 @@ Example:
 
 **Line Heigt**  
 By default, the line height depends on the font family we are using.
+
 ```css
 .package__info {
-line-height: 2;
-line-height:32px;
+  line-height: 2;
+  line-height: 32px;
 }
 ```
 
@@ -1100,7 +1112,8 @@ line-height:32px;
 ### 12.3. text-decoration & text-shadow
 
 [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
-* text-transform: uppercase;
+
+- text-transform: uppercase;
 
 ```css
 .package__info {
@@ -1116,6 +1129,7 @@ line-height:32px;
 #
 
 ### 12.4. Shorthand
+
 ```css
 .package__info {
   font: italic small-caps 700 1.2rem/2 "Anton", sans-serif;
@@ -1128,19 +1142,17 @@ line-height:32px;
   font-family: "Anton", sans-serif; */
   padding: 16px;
   border: 1px solid #0e4f1f;
-  
+
   color: #0e4f1f;
   background: white;
-  
 }
 ```
+
 #
 
 ### 12.5. font-display
 
 ![find](css-images/section12a.png)
-
-
 
 ![find](css-images/section12b.png)
 
@@ -1149,6 +1161,7 @@ line-height:32px;
 ---
 
 ## 13. _Section 13 Flexbox_
+
 - The Flex-Container
 - Main axis vs Cross Axis
 - The Flex Items
@@ -1163,7 +1176,7 @@ line-height:32px;
 [Flex-grammar](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)  
 [Flex-examples](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
 
-[MDN - The theory](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)  and [MDN - Flex_Container](https://developer.mozilla.org/en-US/docs/Glossary/Flex_Container)
+[MDN - The theory](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) and [MDN - Flex_Container](https://developer.mozilla.org/en-US/docs/Glossary/Flex_Container)
 
 #
 
@@ -1173,7 +1186,7 @@ line-height:32px;
 
 #
 
-### 13.3. Some Properties 
+### 13.3. Some Properties
 
 **For the Parent**
 
@@ -1181,41 +1194,37 @@ line-height:32px;
 ![find](css-images/section13c.png)
 
 `align-content`
+
 ```css
 .flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 ```
 
 **For the Children**
 
-`order`   
+`order`  
 `flex-grow flex-shrink`  
-`flex-basis`  
+`flex-basis`
 
+1. flex-grow 属性定义项目的放大比例，默认为 0，即如果存在剩余空间，也不放大。  
+   如果所有项目的 flex-grow 属性都为 1，则它们将等分剩余空间（如果有的话）。如果一个项目的 flex-grow 属性为 2，其他项目都为 1，则前者占据的剩余空间将比其他项多一倍
 
-1. flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。  
-如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍  
+2. flex-shrink 属性定义了项目的缩小比例，默认为 1，即如果空间不足，该项目将缩小。 如果所有项目的 flex-shrink 属性都为 1，当空间不足时，都将等比例缩小。如果一个项目的 flex-shrink 属性为 0，其他项目都为 1，则空间不足时，前者不缩小。
 
-2. flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。 如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。
-
-3. flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。 它可以设为跟width或height属性一样的值（比如350px），则项目将占据固定空间。
-
-
-
-
+3. flex-basis 属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为 auto，即项目的本来大小。 它可以设为跟 width 或 height 属性一样的值（比如 350px），则项目将占据固定空间。
 
 #
-
 
 ---
 
 ## 14. _Section 14 Css Grid_
+
 - CSS Grid
 - Flexbox vs. CSS Grid
 
@@ -1225,7 +1234,7 @@ line-height:32px;
 
 ![find](css-images/section14a.png)
 
-[Grid-Complete-Guide_Css-tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)   
+[Grid-Complete-Guide_Css-tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 [Grid-examples](http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
 
@@ -1234,6 +1243,7 @@ line-height:32px;
 #
 
 ### 14.2. defining columns & rows
+
 ```css
 .container {
   margin: 20px;
@@ -1242,19 +1252,21 @@ line-height:32px;
   /* grid-template-columns: 200px 5rem 20% auto; */
   grid-template-columns: repeat(4, 25%);
   grid-template-columns: repeat(4, [col-start] 25% [col-end]);
-  grid-template-rows: [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, auto) [row-2-end row-3-start] 100px [row-3-end];
+  grid-template-rows:
+    [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, auto)
+    [row-2-end row-3-start] 100px [row-3-end];
 }
 
 .el1 {
   background: rgba(255, 0, 0, 0.5);
-  grid-column: col-start 2 /  col-end 2;
+  grid-column: col-start 2 / col-end 2;
 }
 ```
-
 
 #
 
 ### 14.3. posotioning child elements in Grid
+
 ```css
 .el2 {
   background: rgba(255, 0, 0, 0.5);
@@ -1268,7 +1280,7 @@ line-height:32px;
 .el3 {
   background: rgba(0, 128, 0, 0.5);
   grid-column-start: 2;
-  grid-column-end: span 3; 
+  grid-column-end: span 3;
   grid-row-start: row-1-start;
   grid-row-end: row-2-end;
 }
@@ -1277,6 +1289,7 @@ line-height:32px;
 #
 
 ### 14.4. Gaps between column or row / template areas
+
 ```css
 .container {
   /*
@@ -1284,9 +1297,10 @@ line-height:32px;
   grid-column-gap: 20px;
   */
   grid-gap: 10px 20px;
-  grid-template-areas: "header header header header" 
-                        ". . main main"
-                        "footer footer footer footer";
+  grid-template-areas:
+    "header header header header"
+    ". . main main"
+    "footer footer footer footer";
 }
 
 .el2 {
@@ -1299,7 +1313,6 @@ line-height:32px;
   /* grid-row: row-2-start / span 1; */
   grid-area: main;
 }
-
 ```
 
 #
@@ -1310,18 +1323,17 @@ fit-content (set unit size)
 
 justify-items / align-items (positioning grid element)
 
-
 justify-content / align-content
 
-**  
+\*\*  
 justify-self / align-self (Positioning Elements Individually)
-
 
 #
 
 ### 14.6. Autoflow
 
 Can set up the first row, and make the folow rows as autoflow. (same as columns)
+
 ```css
 .container {
   margin: 20px;
@@ -1335,14 +1347,14 @@ Can set up the first row, and make the folow rows as autoflow. (same as columns)
   grid-auto-columns: 5rem;
 }
 ```
-  
+
 `auto-fill` and `auto-fit`
+
 ```css
 .container {
   margin: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit
-, 15rem);
+  grid-template-columns: repeat(auto-fit, 15rem);
   /* grid-template-rows: 20rem;
   justify-content: center;
   grid-gap: 1.5rem;
@@ -1359,10 +1371,9 @@ Can set up the first row, and make the folow rows as autoflow. (same as columns)
 Auto fill white space,
 Not recommended!
 
-
 #
-### 14.8. Flexbox vs. CSS Grid
 
+### 14.8. Flexbox vs. CSS Grid
 
 One dimension， normally, you should take flexbox.  
 Multiple dimensions, the grid is something you should think about.
@@ -1374,52 +1385,57 @@ Multiple dimensions, the grid is something you should think about.
 ---
 
 ## 15. _Section 15 Css Transforms_
+
 - Rotating, Moving, Skewing & Scaling Elements
 - 3D Transformations
 - Transforming Elements with CSS Transforms
 
 #
+
 ### 15.1. Rotating
+
 整体倾斜角度
 
 ```css
 .transform {
-    /* display: flex;
+  /* display: flex;
     position: absolute;
     top: 200px;
     border: solid 3px black;
     flex-direction: row;
     flex-wrap: wrap; */
-    transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
-    transform-origin: center;
-  }
+  transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+  transform-origin: center;
+}
 ```
+
 transform-origin 中心点
+
 #
 
 ### 15.2. skew and scale
+
 边框倾斜角度 和 放大
 
 ```css
 .testimonial__image-container {
-    width: 100%;
-    max-width: 40rem;
-    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
-    transform: skew(20deg);
-    overflow: hidden;
-  }
+  width: 100%;
+  max-width: 40rem;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+  transform: skew(20deg);
+  overflow: hidden;
+}
 
-
-  .testimonial__image {
-    width: 100%;
-    vertical-align: top;
-    transform: skew(-20deg) scale(1.4);
-  }
+.testimonial__image {
+  width: 100%;
+  vertical-align: top;
+  transform: skew(-20deg) scale(1.4);
+}
 ```
 
 #
 
-### 15.3. D  dimension
+### 15.3. dimension
 
 #
 
@@ -1440,9 +1456,8 @@ perspective-origin
 
 ### 15.6. transform-style
 
-
-
 #
+
 ### 15.7. backface-visibility
 
 背后显示
@@ -1452,30 +1467,33 @@ perspective-origin
 ---
 
 ## 16. _Section 16 Transitions and Animations_
+
 - transitions
 - animations
 
 #
+
 ### 16.1. transitions
+
 样式改变过渡属性
 
 Example:
 
 `transition: opacity 200ms 1s ease-out; `
 
-Can be translated to: "Animate any changes in the `opacity`  property (for the element to which the `transition`  property is applied) over a duration of 200ms. Start fast and end slow, also make sure to wait 1s before you start".
+Can be translated to: "Animate any changes in the `opacity` property (for the element to which the `transition` property is applied) over a duration of 200ms. Start fast and end slow, also make sure to wait 1s before you start".
 
 Instead of this shorthand, you can also specify the four individual properties:
 
-1) [transition-property](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property)=> transition-property: opacity; 
+1. [transition-property](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property)=> transition-property: opacity;
 
-2) [transition-duration](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration) => transition-duration: 200ms; 
+2. [transition-duration](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration) => transition-duration: 200ms;
 
-3) [transition-timing-function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) => transition-timing-function: ease-out; 
+3. [transition-timing-function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) => transition-timing-function: ease-out;
 
 Possible timing function values are: `ease-out`, `ease-in` , `linear` , `cubic-bezier()` and a couple of others. See the the next section for more details.
 
-4) [transition-delay](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay) => transition-delay: 1s; 
+4. [transition-delay](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay) => transition-delay: 1s;
 
 You can read the official MDN article on CSS transitions here: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
 
@@ -1486,11 +1504,14 @@ You can read the official MDN article on CSS transitions here: https://developer
 https://easings.net/en
 
 #
+
 ### 16.3. animations
 
-```css
+```html
 <div id="banner-message"></div>
+```
 
+```css
 #banner-message {
   background: #fff;
   border-radius: 50%;
@@ -1504,14 +1525,23 @@ https://easings.net/en
 }
 
 @keyframes example {
-  0%   {background-color: green;}
-  50%  {background-color: yellow;}
-  66.7%  {background-color: red;}
-  100% {background-color: green;}
+  0% {
+    background-color: green;
+  }
+  50% {
+    background-color: yellow;
+  }
+  66.7% {
+    background-color: red;
+  }
+  100% {
+    background-color: green;
+  }
 }
 ```
 
 Example:
+
 ```CSS
 @keyframes wiggle {
   from {
@@ -1522,49 +1552,60 @@ Example:
   }
 }
 
-animation: wiggle 200ms 1s ease-out 8 alternate forwards running; 
+animation: wiggle 200ms 1s ease-out 8 alternate forwards running;
 ```
-`animation: NAME DURATION DELAY TIMING-FUNCTION ITERATION DIRECTION FILL-MODE PLAY-STATE;`  
+
+`animation: NAME DURATION DELAY TIMING-FUNCTION ITERATION DIRECTION FILL-MODE PLAY-STATE;`
 
 Can be translated to: "Play the wiggle keyframe set (animation) over a duration of **200ms**. Between two keyframes **start fast and end slow**, also make sure to wait **1s before you start**. Play **8 animations** and **alternate** after each animation. Once you're done, **keep the final value** applied to the element. Oh, and you should be **playing the animation - not pausing**."
 
 Instead of this shorthand, you can also specify the individual properties:
 
-1) animation-name  (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-name) => animation-name: wiggle; 
+1. animation-name (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-name) => animation-name: wiggle;
 
-2) animation-duration  (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration) => animation-duration: 200ms; 
+2. animation-duration (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration) => animation-duration: 200ms;
 
-3) animation-timing-function  (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function) => animation-timing-function: ease-out; 
+3. animation-timing-function (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function) => animation-timing-function: ease-out;
 
-Possible timing function values are: ease-out , ease-in , linear , cubic-bezier()  and a couple of others. See the above link for more details.
+Possible timing function values are: ease-out , ease-in , linear , cubic-bezier() and a couple of others. See the above link for more details.
 
-4) animation-delay  (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay) => animation-delay: 1s; 
+4. animation-delay (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay) => animation-delay: 1s;
 
-5) animation-iteration-count  (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count) => animation-iteration-count: 8; 
+5. animation-iteration-count (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count) => animation-iteration-count: 8;
 
-6) animation-direction  (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction) => animation-direction: alternate; 
+6. animation-direction (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction) => animation-direction: alternate;
 
-7) animation-fill-mode  (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode) => animation-fill-mode: forwards; 
+7. animation-fill-mode (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode) => animation-fill-mode: forwards;
 
-8) animation-play-state  (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state) => animation-play-state: running; 
+8. animation-play-state (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state) => animation-play-state: running;
 
 You can read the official MDN article on CSS animations here: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
 
-
-
 #
+
 ### 16.4. multiple Keyframes
+
 ```css
 @keyframes mymove {
-  0%   {top: 0px;}
-  25%  {top: 200px;}
-  50%  {top: 100px;}
-  75%  {top: 200px;}
-  100% {top: 0px;}
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 200px;
+  }
+  50% {
+    top: 100px;
+  }
+  75% {
+    top: 200px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 ```
-![find](css-images/section16a.png)
 
+![find](css-images/section16a.png)
 
 #
 
@@ -1573,8 +1614,8 @@ You can read the official MDN article on CSS animations here: https://developer.
 ## 17. _Section 17 Future-proof Css_
 
 #
-### 17.1. CSS Variables
 
+### 17.1. CSS Variables
 
 ![find](css-images/section17a.png)
 
@@ -1582,7 +1623,9 @@ You can read the official MDN article on CSS animations here: https://developer.
 use sass！
 
 #
+
 ### 17.2. Vendor Prefixes
+
 [Vendor Prefixes](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix)
 
 [Which Vendor Prefixes should you use?](http://shouldiprefix.com/)
@@ -1596,6 +1639,7 @@ use sass！
 Eliminating cross-Browser
 
 #
+
 ### 17.3. Name css class
 
 ![find](css-images/section17b.png)
@@ -1605,10 +1649,10 @@ Eliminating cross-Browser
 ![find](css-images/section17c.png)
 
 #
+
 ### 17.4. Vanilla CSS vs Frameworks
 
 ![find](css-images/section17d.png)
-
 
 #
 
@@ -1625,19 +1669,22 @@ After you finish your code. you need to turn Sass to Css.
 
 watch the different when coding:  
 `sass --watch main.scss:main.css`
+
 #
+
 ### 18.1. Scss and Sass
 
 SASS works without semi-colons and without braces, instead indentation is used to determine to which selector a certain property belongs.
 
 Scss like css.
 
-
-
 #
-### 18.2. Nesting 
+
+### 18.2. Nesting
+
 **Nesting Selector:**  
-Css 
+Css
+
 ```CSS
 .documentation-links {
   list-style: none;
@@ -1656,6 +1703,7 @@ Css
 ```
 
 Scss
+
 ```scss
 .documentation-links {
   list-style: none;
@@ -1673,11 +1721,12 @@ Scss
   }
 }
 ```
+
 #
-**Nesting Variables:**  
+
+**Nesting Variables:**
 
 ```scss
-
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1696,8 +1745,11 @@ Scss
 ```
 
 #
+
 ### 18.3. Variables
+
 list & map in Variables
+
 ```scss
 $mian-color: #521751;
 $border-default: 0.05rem solid $mian-color;
@@ -1713,7 +1765,10 @@ $border-default: 0.05rem solid $mian-color;
 
 ```scss
 // $mian-color: #521751;
-$colors: (main: #521751, secondary:#fa923f);
+$colors: (
+  main: #521751,
+  secondary: #fa923f,
+);
 $border-default: 0.05rem solid map-get($colors, main);
 
 .documentation-links .documentation-link {
@@ -1727,13 +1782,17 @@ $border-default: 0.05rem solid map-get($colors, main);
 ```
 
 #
+
 ### 18.4. Built-In Functions
 
 https://sass-lang.com/documentation/modules
 
 ```scss
 // $mian-color: #521751;
-$colors: (main: #521751, secondary:#fa923f);
+$colors: (
+  main: #521751,
+  secondary: #fa923f,
+);
 $border-default: 0.05rem solid map-get($colors, main);
 
 .documentation-links .documentation-link {
@@ -1745,10 +1804,11 @@ $border-default: 0.05rem solid map-get($colors, main);
   border: $border-default;
 }
 ```
+
 unit and size can use `*`, `/` as well
 
-
 #
+
 ### 18.5. Inheritance
 
 ```scss
@@ -1764,7 +1824,7 @@ unit and size can use `*`, `/` as well
   }
 }
 
-.sass-introduction { 
+.sass-introduction {
   @extend .sass-section;
   box-shadow: $size-tiny $size-tiny $size-tiny / 2 #ccc;
 }
@@ -1774,15 +1834,19 @@ unit and size can use `*`, `/` as well
   margin: $size-default * 2 0;
 }
 ```
+
 #
+
 ### 18.6. Mixins
+
 Very useful and important. Must to read!
 
 https://sass-lang.com/documentation/at-rules/mixin
 
-
 #
+
 ### 18.7. Ampersand Operator
+
 ```scss
 .documentation-link {
   text-decoration: none;
@@ -1801,30 +1865,14 @@ https://sass-lang.com/documentation/at-rules/mixin
 ```
 
 #
+
 ### 18.8. Useful Resources
-Adding Simple Arithmetics (数据可加减乘除) 
+
+Adding Simple Arithmetics (数据可加减乘除)
 Adding Better Import and Partials (合并引用)
-Improving Media Queries  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Improving Media Queries
 
 #
-
 
 something:  
 text-align: right;  
@@ -1838,5 +1886,3 @@ text-decoration: none;
 ```
 
 ---
-
-
